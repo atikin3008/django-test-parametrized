@@ -3,7 +3,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 git branch: "${GIT_BRANCH}"
-                    url: "$GIT_URL"
+                    url: "${GIT_URL}"
             }
         }
         stage('Install Dependencies') {
